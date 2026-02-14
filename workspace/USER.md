@@ -21,6 +21,8 @@
 | Сын Наташи | Антон | — | Старший сын Наташи. ДР: 25 мая 2008 (18 лет в 2026). См. memory/anton-notes.md |
 | Дочь | Арина | — | Дочь KZ. Хорошо рисует. См. memory/arina-notes.md |
 
+| Сестра | Марина | — | См. memory/marina-notes.md |
+
 ## Context
 
 *(Getting to know them — more to come.)*
