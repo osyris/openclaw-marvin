@@ -32,7 +32,7 @@
       "name": "Напоминание: записаться к зубному",
       "enabled": true,
       "createdAtMs": 1770499662340,
-      "updatedAtMs": 1771056020924,
+      "updatedAtMs": 1771142415208,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *",
@@ -48,11 +48,12 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771142400000,
-        "lastRunAtMs": 1771056000021,
-        "lastStatus": "ok",
-        "lastDurationMs": 20903,
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1771228800000,
+        "lastRunAtMs": 1771142400018,
+        "lastStatus": "error",
+        "lastDurationMs": 15190,
+        "consecutiveErrors": 1,
+        "lastError": "cron announce delivery failed"
       }
     },
     {
@@ -114,7 +115,7 @@
       "name": "Daily git backup (3:00 AM Tallinn)",
       "enabled": true,
       "createdAtMs": 1771077110796,
-      "updatedAtMs": 1771077110796,
+      "updatedAtMs": 1771106407576,
       "schedule": {
         "kind": "cron",
         "expr": "0 0 * * *",
@@ -130,8 +131,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771106400000,
-        "runningAtMs": 1771106400027
+        "nextRunAtMs": 1771192800000,
+        "lastRunAtMs": 1771106400038,
+        "lastStatus": "ok",
+        "lastDurationMs": 7538,
+        "consecutiveErrors": 0,
+        "runningAtMs": 1771192800016
       }
     }
   ]
