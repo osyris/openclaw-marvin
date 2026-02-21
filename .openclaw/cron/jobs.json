@@ -113,7 +113,7 @@
       "name": "Daily git backup (3:00 AM Tallinn)",
       "enabled": true,
       "createdAtMs": 1771077110796,
-      "updatedAtMs": 1771452008181,
+      "updatedAtMs": 1771624824345,
       "schedule": {
         "kind": "cron",
         "expr": "0 0 * * *",
@@ -129,12 +129,41 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771538400000,
-        "lastRunAtMs": 1771452000017,
+        "nextRunAtMs": 1771711200000,
+        "lastRunAtMs": 1771624800013,
         "lastStatus": "ok",
-        "lastDurationMs": 8164,
+        "lastDurationMs": 24332,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771538400020
+        "runningAtMs": 1771711200008
+      }
+    },
+    {
+      "id": "b6eb212a-0826-4cb0-bae8-070910849007",
+      "agentId": "main",
+      "name": "Напоминание: написать ортодонту по Арине",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771621706040,
+      "updatedAtMs": 1771668002423,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-02-21T10:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Напомни KZ в Telegram: 🦷 Напоминание! Написать ортодонту по поводу Арины."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "lastRunAtMs": 1771668000015,
+        "lastStatus": "error",
+        "lastDurationMs": 2408,
+        "lastError": "cron delivery target is missing",
+        "consecutiveErrors": 1
       }
     }
   ]

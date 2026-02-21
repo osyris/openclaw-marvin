@@ -23,6 +23,10 @@
 
 | Сестра | Марина | — | См. memory/marina-notes.md |
 
+## Обучение / менторы
+
+- **Matthew Lakajev** — основатель Seven Figure Creators (sevenfigurecreators.com). Учит как получать лиды и продажи через LinkedIn. 400+ учеников. LinkedIn: linkedin.com/in/mattlakajev. KZ учится у него outreach-методологии.
+
 ## Context
 
 *(Getting to know them — more to come.)*

@@ -44,3 +44,13 @@ Then respond to the content in a follow-up message.
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+---
+
+## Email (IMAP)
+
+### konstantin@amanati.ai
+- **Server:** mail.amanati.ai
+- **Port:** 993 (TLS)
+- **Username:** konstantin@amanati.ai
+- **Protocol:** IMAP (Dovecot)

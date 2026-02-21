@@ -180,6 +180,11 @@ Cluster One
 ├── Обучение (AI-first подход, агенты, автоматизация)
 ├── Инструменты (CallVA, AI-агенты, инфраструктура)
 ├── Комьюнити (Skool, Telegram, YouTube)
+│   ├── AI Cluster Community (public — открытое)
+│   └── AI Cluster Private (приватное обучение + персональная работа)
+├── AI Community Manager (агент на OpenClaw — ведёт комьюнити)
+├── Agent Back-Office (создание, настройка, мониторинг агентов)
+│   └── Agent HR / Oracle — агент, который создаёт других агентов (минтинг → онбординг → специалист)
 ├── Custom Development (AI-driven разработка)
 └── Франшиза / партнёрская модель
 ```
