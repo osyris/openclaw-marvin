@@ -35,6 +35,9 @@ workspace/*.jsonl
 .ssh/marvin_deploy
 .ssh/known_hosts*
 
+# Project repos (cloned separately, not part of workspace)
+projects/
+
 # OS junk
 .DS_Store
 Thumbs.db
