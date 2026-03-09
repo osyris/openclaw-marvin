@@ -126,7 +126,7 @@
       "name": "Daily git backup (3:00 AM Tallinn)",
       "enabled": true,
       "createdAtMs": 1771077110796,
-      "updatedAtMs": 1772920814645,
+      "updatedAtMs": 1773007213587,
       "schedule": {
         "kind": "cron",
         "expr": "0 0 * * *",
@@ -142,15 +142,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773007200000,
-        "lastRunAtMs": 1772920800008,
+        "nextRunAtMs": 1773093600000,
+        "lastRunAtMs": 1773007200018,
         "lastStatus": "ok",
-        "lastDurationMs": 14637,
+        "lastDurationMs": 13569,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1773007200014
+        "runningAtMs": 1773093600010
       }
     },
     {
@@ -211,6 +211,41 @@
         "lastStatus": "error",
         "lastDurationMs": 28410,
         "lastError": "cron announce delivery failed",
+        "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "94445c27-fb63-460a-9f83-8c14a2a25cf7",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "иди спать",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1773082905973,
+      "updatedAtMs": 1773082980397,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-09T19:03:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🛌 Напоминание для KZ: иди спать!"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "telegram:535123867",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1773082980025,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 372,
+        "lastError": "FailoverError: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate.",
+        "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 1
       }
     }
