@@ -67,7 +67,7 @@
       "name": "Напоминание: счета бухгалтеру",
       "enabled": true,
       "createdAtMs": 1770565000000,
-      "updatedAtMs": 1773201600350,
+      "updatedAtMs": 1773288021614,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -86,14 +86,15 @@
         "bestEffort": true
       },
       "state": {
-        "lastRunAtMs": 1773201600011,
+        "lastRunAtMs": 1773288000013,
         "lastStatus": "error",
-        "lastDurationMs": 339,
-        "consecutiveErrors": 2,
-        "nextRunAtMs": 1773288000000,
+        "lastDurationMs": 21601,
+        "consecutiveErrors": 3,
+        "nextRunAtMs": 1773374400000,
         "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown",
-        "lastError": "FailoverError: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate."
+        "lastDeliveryStatus": "delivered",
+        "lastError": "⚠️ ✉️ Message failed",
+        "lastDelivered": true
       }
     },
     {
@@ -102,7 +103,7 @@
       "name": "Daily git backup (3:00 AM Tallinn)",
       "enabled": true,
       "createdAtMs": 1771077110796,
-      "updatedAtMs": 1773180000370,
+      "updatedAtMs": 1773266408401,
       "schedule": {
         "kind": "cron",
         "expr": "0 0 * * *",
@@ -118,14 +119,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773266400000,
-        "lastRunAtMs": 1773180000012,
-        "lastStatus": "error",
-        "lastDurationMs": 358,
-        "consecutiveErrors": 1,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "not-requested",
-        "runningAtMs": 1773266400014
+        "nextRunAtMs": 1773352800000,
+        "lastRunAtMs": 1773266400024,
+        "lastStatus": "ok",
+        "lastDurationMs": 8377,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "runningAtMs": 1773352800007
       }
     },
     {
