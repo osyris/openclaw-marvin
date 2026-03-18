@@ -1,3 +1,7 @@
+# === Platform env files (Coolify/Railway inject these at runtime) ===
+.env
+.env_
+
 # === OpenClaw secrets & state ===
 .openclaw/openclaw.json
 !.openclaw/openclaw.sanitized.json
