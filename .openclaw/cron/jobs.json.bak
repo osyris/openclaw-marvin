@@ -62,47 +62,12 @@
       "deleteAfterRun": true
     },
     {
-      "id": "b7c3d1e2-4f5a-6b7c-8d9e-0f1a2b3c4d5e",
-      "agentId": "main",
-      "name": "Напоминание: счета бухгалтеру",
-      "enabled": true,
-      "createdAtMs": 1770565000000,
-      "updatedAtMs": 1773979207917,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 12 * * *",
-        "tz": "Asia/Makassar"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "next-heartbeat",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "📄 Привет! Не забудь предоставить счета бухгалтеру! Ты уже это сделал?"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "telegram:535123867",
-        "bestEffort": true
-      },
-      "state": {
-        "lastRunAtMs": 1773979200030,
-        "lastStatus": "ok",
-        "lastDurationMs": 7887,
-        "consecutiveErrors": 0,
-        "nextRunAtMs": 1774065600000,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
-      }
-    },
-    {
       "id": "80b6b73a-f5d2-45ab-9344-6ba7f264393f",
       "agentId": "main",
       "name": "Daily git backup (3:00 AM Tallinn)",
       "enabled": true,
       "createdAtMs": 1771077110796,
-      "updatedAtMs": 1773957649282,
+      "updatedAtMs": 1774044027874,
       "schedule": {
         "kind": "cron",
         "expr": "0 0 * * *",
@@ -118,10 +83,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774044000000,
-        "lastRunAtMs": 1773957600021,
+        "nextRunAtMs": 1774130400000,
+        "lastRunAtMs": 1774044000029,
         "lastStatus": "ok",
-        "lastDurationMs": 49261,
+        "lastDurationMs": 27845,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
@@ -257,6 +222,39 @@
         "lastError": "FailoverError: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate.",
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "ae68ac86-b7f3-4d5d-8756-d7849c7c1b07",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Счета бухгалтеру — ежемесячный контроль",
+      "enabled": true,
+      "createdAtMs": 1774068537483,
+      "updatedAtMs": 1774080014588,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "tz": "Europe/Tallinn"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Проверь файл /data/workspace/memory/accounting-status.json.\n\nЛогика:\n1. Прочитай файл и узнай текущий статус (status: 'pending' или 'done')\n2. Узнай сегодняшнюю дату (какое число месяца)\n3. Если сегодня 10-е число месяца: обнови статус на 'pending' в файле, отправь напоминание KZ\n4. Если статус 'pending' (и не 10-е): отправь напоминание KZ\n5. Если статус 'done' и не 10-е: ничего не делай, заверши молча\n\nТекст напоминания (если нужно отправить): '📄 Напоминание: нужно предоставить счета бухгалтеру за этот месяц! Как только сделаешь — скажи мне «счета сданы».'\n\nДля отправки используй message tool (channel: telegram, to: telegram:535123867).\nПри обновлении файла сохраняй поле updatedAt с текущей датой."
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1774166400000,
+        "lastRunAtMs": 1774080000022,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 14566,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
       }
     }
   ]
