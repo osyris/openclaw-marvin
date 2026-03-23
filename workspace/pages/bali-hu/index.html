@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HEYOU · Ubud, Bali</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #f7f2eb;
+    font-family: 'Georgia', serif;
+    min-height: 100vh;
+  }
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 680px;
+    overflow: hidden;
+  }
+
+  .hero img.hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.6) 100%);
+  }
+
+  .hero-text {
+    position: absolute;
+    bottom: 36px;
+    left: 32px;
+    right: 32px;
+    color: #fff;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    opacity: 0.75;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .content {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 44px 24px 64px;
+  }
+
+  .date-tag {
+    display: block;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #a09282;
+    margin-bottom: 28px;
+  }
+
+  .quote {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: #3a3228;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .divider {
+    width: 40px;
+    height: 1px;
+    background: #c9a96e;
+    margin: 28px auto;
+  }
+
+  .place-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+
+  .place-badge img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e0d5c5;
+  }
+
+  .place-badge-text {
+    font-family: 'Arial', sans-serif;
+  }
+
+  .place-badge-text strong {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    color: #3a3228;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .place-badge-text span {
+    font-size: 0.75rem;
+    color: #a09282;
+    letter-spacing: 0.06em;
+  }
+
+  .photo2-wrap {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.12);
+    margin-top: 4px;
+  }
+
+  .photo2-wrap img {
+    width: 100%;
+    display: block;
+  }
+
+  .caption {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.76rem;
+    color: #b0a090;
+    margin-top: 12px;
+    letter-spacing: 0.05em;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img class="hero-photo" src="photo1.jpg" alt="Konstantin & Veronika at HEYOU">
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <h1>Konstantin & Veronika</h1>
+    <p>HEYOU · Ubud, Bali</p>
+  </div>
+</div>
+
+<div class="content">
+  <span class="date-tag">23 March 2026 · Ubud, Bali</span>
+
+  <div class="place-badge">
+    <img src="logo.jpg" alt="HEYOU logo">
+    <div class="place-badge-text">
+      <strong>HEYOU</strong>
+      <span>Coffee · Boba · Eatery</span>
+    </div>
+  </div>
+
+  <p class="quote">Met over morning coffee at HEYOU — the kind of spontaneous breakfast that turns into a proper conversation. Good company makes any place feel like the best spot in Bali.</p>
+
+  <div class="divider"></div>
+
+  <div class="photo2-wrap">
+    <img src="photo2.jpg" alt="At HEYOU Cafe">
+  </div>
+  <p class="caption">HEYOU, Ubud 🌿</p>
+</div>
+
+</body>
+</html>
