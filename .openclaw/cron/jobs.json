@@ -30,44 +30,12 @@
       }
     },
     {
-      "id": "45fbb048-a49b-4482-b8e5-173c441f4628",
-      "agentId": "main",
-      "name": "Напоминание: записаться к зубному (после Bali)",
-      "enabled": true,
-      "createdAtMs": 1770499662340,
-      "updatedAtMs": 1771834819353,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-25T02:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "next-heartbeat",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🦷 Привет! Ты вернулся с Bali — пора записаться к зубному! Твой стоматолог должен был вернуться из отпуска. Запишись на приём в апреле."
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "telegram:535123867",
-        "bestEffort": true
-      },
-      "state": {
-        "lastRunAtMs": 1771228800009,
-        "lastStatus": "ok",
-        "lastDurationMs": 29792,
-        "consecutiveErrors": 0,
-        "nextRunAtMs": 1774404000000
-      },
-      "deleteAfterRun": true
-    },
-    {
       "id": "80b6b73a-f5d2-45ab-9344-6ba7f264393f",
       "agentId": "main",
       "name": "Daily git backup (3:00 AM Tallinn)",
       "enabled": true,
       "createdAtMs": 1771077110796,
-      "updatedAtMs": 1774303225355,
+      "updatedAtMs": 1774389610935,
       "schedule": {
         "kind": "cron",
         "expr": "0 0 * * *",
@@ -83,15 +51,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774389600000,
-        "lastRunAtMs": 1774303200029,
+        "nextRunAtMs": 1774476000000,
+        "lastRunAtMs": 1774389600025,
         "lastStatus": "ok",
-        "lastDurationMs": 25326,
+        "lastDurationMs": 10910,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
         "lastDelivered": false,
-        "runningAtMs": 1774389600010
+        "runningAtMs": 1774476000014
       }
     },
     {
@@ -232,7 +200,7 @@
       "name": "Счета бухгалтеру — ежемесячный контроль",
       "enabled": true,
       "createdAtMs": 1774068537483,
-      "updatedAtMs": 1774339222640,
+      "updatedAtMs": 1774425615039,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *",
@@ -248,11 +216,44 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774425600000,
-        "lastRunAtMs": 1774339200026,
+        "nextRunAtMs": 1774512000000,
+        "lastRunAtMs": 1774425600026,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 22614,
+        "lastDurationMs": 15013,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "abf096c1-570f-4977-8f11-b3497bfc6473",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Claude Code & Anthropic daily digest",
+      "enabled": true,
+      "createdAtMs": 1774420676601,
+      "updatedAtMs": 1774458189054,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Makassar"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Ежедневный мониторинг Claude Code и Anthropic. Выполни следующие шаги:\n\n1. Проверь GitHub релизы Claude Code: https://github.com/anthropics/claude-code/releases — что нового за последние 1-2 дня?\n2. Проверь CHANGELOG или commits если есть\n3. Проверь анонсы Anthropic: https://www.anthropic.com/news — что нового за последние 1-2 дня?\n4. Поищи в интернете 'Anthropic announcement today' или 'Claude Code update' для последних новостей\n\nЕсли есть что-то новое и интересное — отправь KZ краткую выжимку в Telegram (channel: telegram, to: telegram:535123867) в формате:\n🤖 **Claude Code / Anthropic дайджест [дата]**\n• [пункт 1]\n• [пункт 2]\n...\n\nЕсли за последние сутки ничего существенного не появилось — НЕ отправляй сообщение, просто заверши молча."
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1774486800000,
+        "lastRunAtMs": 1774458000026,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 35802,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
